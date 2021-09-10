@@ -121,8 +121,3 @@ function formatTitle(key) {
   }
   return title;
 }
-
-// onClick
-function readMore(id) {
-  console.log("Here: " + id);
-}
