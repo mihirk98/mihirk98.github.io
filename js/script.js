@@ -86,12 +86,17 @@ function addSources(key, heading, sources) {
 
   let length = sources.length;
   for (let i = 0; i < length; i++) {
-    var source = document.createElement("div");
-    source.innerHTML = `
-    <div class="source">
-      <h4>[${sources[i].index}]&nbsp</h4>
-      <h4>${sources[i].desc}</h4>
-    </div>`;
+    let index = sources[i].index;
+    let link = sources[i].link == null ? "" : sources[i].link;
+    let desc = sources[i].desc == null ? sources[i].link : sources[i].desc;
+    var source = document.createElement("source-component");
+    source.setAttribute("index", index);
+    source.setAttribute("desc", desc);
+
+    source.addEventListener("click", function () {
+      window.open(link, "_blank").focus();
+    });
+
     sourcesElement.appendChild(source);
   }
 }

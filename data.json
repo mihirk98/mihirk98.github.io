@@ -10,20 +10,40 @@
                             "sources": [
                                 {
                                     "index": 1,
-                                    "desc": "Covid19 India Org- a volunteer-driven crowdsourced website to track coronavirus in India.",
+                                    "desc": "Covid19 India Org- a volunteer driven crowdsourced website to track coronavirus in India.",
                                     "link": "https://www.covid19india.org",
                                     "source": "WebLink"
                                 },
                                 {
                                     "index": 2,
-                                    "desc": "GOI MOHFW press briefing, publish by PIB India, on September 15, 2020.",
+                                    "desc": "GOI MOHFW press briefing published by PIB India on September 15, 2020.",
                                     "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1654663",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 3,
+                                    "desc": "\"Coronavirus: India faces oxygen scarcity as cases surge\" authored by Soutik Biswas, published by BBC on September 15, 2020.",
+                                    "link": "https://www.bbc.com/news/world-asia-india-54139112",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 4,
+                                    "desc": "\"4 Covid Patients Die In Madhya Pradesh After Oxygen Cylinder Shortage\" published by NDTV.",
+                                    "link": "https://www.ndtv.com/india-news/4-covid-patients-die-in-madhya-pradesh-after-oxygen-cylinder-shortage-2293574",
                                     "source": "WebArticle"
                                 }
                             ]
                         },
                         "20-10-2020": {
-                            "content": "On October 20, 2020 MOHFW held a follow-up press briefing. Rajesh Bhushan announces, looking gleeful as ever, that today he will enlighten us about the progress made by the country to address the non-existent oxygen crisis. First, infrastructure augmentation. Rajesh shamelessly admits that in April 2020, India had roughly 57 thousand oxygen supported,  23 thousand ICU and 12 thousand ventilator beds for a population of 1.4 billion. He takes credit for the desperate and last minute “infrastructure augmentation” efforts to improve India’s severely weak healthcare system since the pandemic began. Further, he claims that the country is now prepared to easily handle any future spikes in cases. He boasts that India has increased its medical oxygen production capacity, beating the same old drum, without acknowledging that the oxygen crisis is a logistical one and not one of production.\n\nSecond, ensuring uninterrupted supply of medical oxygen. Rajesh lists a few common sense policies that the government delayed implementing further exhibiting their incompetency. Third,  monitoring and co-ordination where Rajesh displayed his habit of repeating himself. Finally, proactive interventions which were by no means proactive."
+                            "content": "On October 20, 2020 MOHFW held a follow-up press briefing [1]. Rajesh Bhushan announces, looking gleeful as ever, that today he will enlighten us about the progress made by the country to address the non-existent oxygen crisis. First, infrastructure augmentation. Rajesh shamelessly admits that in April 2020, India had roughly 57 thousand oxygen supported,  23 thousand ICU and 12 thousand ventilator beds for a population of 1.4 billion. He takes credit for the desperate and last minute “infrastructure augmentation” efforts to improve India’s severely weak healthcare system since the pandemic began. Further, he claims that the country is now prepared to easily handle any future spikes in cases. He boasts that India has increased its medical oxygen production capacity, beating the same old drum, without acknowledging that the oxygen crisis is a logistical one and not one of production.\n\nSecond, ensuring uninterrupted supply of medical oxygen. Rajesh lists a few common sense policies that the government delayed implementing further exhibiting their incompetency. Third,  monitoring and co-ordination where Rajesh displayed his habit of repeating himself. Finally, proactive interventions which were by no means proactive.",
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "Follow-up GOI MOHFW press briefing titled \"No shortage of medical oxygen in the country:  Health Secretary\" published by PIB India on September 15, 2020.",
+                                    "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1666181",
+                                    "source": "WebArticle"
+                                }
+                            ]
                         }
                     }
                 ]

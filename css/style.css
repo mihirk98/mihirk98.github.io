@@ -30,7 +30,7 @@ article-component {
 
 @media screen and (orientation: portrait) {
   article-component {
-    width: 80%;
+    width: 100%;
   }
 }
 
