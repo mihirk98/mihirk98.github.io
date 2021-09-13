@@ -23,17 +23,6 @@ p {
   background-color: #ffffff;
 }
 
-/* Article */
-article-component {
-  width: 50%;
-}
-
-@media screen and (orientation: portrait) {
-  article-component {
-    width: 100%;
-  }
-}
-
 /* Text */
 h1 {
   font-size: 2rem;
