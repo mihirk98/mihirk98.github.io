@@ -5,7 +5,7 @@ class Source extends HTMLElement {
     this.innerHTML = `
     <div class="source">
         <h4>[${index}]&nbsp</h4>
-        <h4 class="desc">${desc}</h4>
+        <h4 class="link">${desc}</h4>
     </div>
     `;
   }

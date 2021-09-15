@@ -11,6 +11,13 @@
   overflow: auto;
 }
 
+#dialog-title {
+  width: 100%;
+  padding-top: 0.2rem;
+  font-size: 1rem;
+  text-align: start;
+}
+
 #dialog-content {
   display: flex;
   flex-direction: column;
@@ -28,11 +35,17 @@
   white-space: pre-line;
 }
 
+#dialog-sources {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
 #dialog-close {
   width: calc(100% - 2rem);
   text-align: end;
-  cursor: pointer;
-  text-decoration: underline;
   padding-left: 1rem;
   padding-right: 1rem;
 }

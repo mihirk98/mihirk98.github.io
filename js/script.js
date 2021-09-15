@@ -5,9 +5,8 @@ window.addEventListener("DOMContentLoaded", async (_) => {
       let length = Object.keys(data.archives).length;
       for (var i = 0; i < length; i++) {
         let key = Object.keys(data.archives[i])[0];
-        let title = formatTitle(key);
         let value = Object.values(data.archives[i]);
-        createPage(key, title, value[0].archive);
+        createPage(key, value[0].archive);
       }
     })
     .catch((error) => alert(error));
@@ -24,16 +23,14 @@ function createDialog() {
   });
 }
 
-function createPage(key, title, articles) {
-  const pageTitle = title;
-
+function createPage(key, articles) {
   // Access screen
   const screen = document.getElementById("screen");
 
   // Create page
   var page = document.createElement("page-component");
   page.setAttribute("key", key);
-  page.setAttribute("title", title);
+  page.setAttribute("title", formatTitle(key));
 
   // Add page to screen
   screen.appendChild(page);
@@ -64,22 +61,37 @@ function createArticle(body, key, heading, content, sources) {
 
   body.appendChild(article);
 
-  articleReadMoreClickListener(key, heading, content);
-
   addSources(key, heading, sources);
+
+  articleReadMoreClickListener(key, heading, content, sources);
 }
 
-function articleReadMoreClickListener(key, heading, content) {
+function articleReadMoreClickListener(key, heading, content, sources) {
   let screen = document.getElementById("screen");
   let dialog = document.getElementById("dialog");
+  let dialog_heading = document.getElementById("dialog-heading");
+  let dialog_title = document.getElementById("dialog-title");
   let dialog_content_p = document.getElementById("dialog-content-p");
+  let dialog_sources = document.getElementById("dialog-sources");
+  let sourcesEl = document.getElementById(key + "-" + heading + "-sources");
   var expandEl = document.getElementById(
     key + "-" + heading + "-content-p-span-expand"
   );
   expandEl.addEventListener("click", function () {
     screen.style.overflowY = "hidden";
     dialog.style.display = "block";
+    dialog_heading.innerHTML = heading;
+    dialog_title.innerHTML = formatTitle(key);
     dialog_content_p.innerHTML = content;
+    dialog_sources.innerHTML = "";
+    for (let i = 0; i < sourcesEl.children.length; i++) {
+      let source = sourcesEl.children[i].cloneNode();
+      source.addEventListener("click", function () {
+        let link = sources[i].link == null ? "" : sources[i].link;
+        window.open(link, "_blank").focus();
+      });
+      dialog_sources.appendChild(source);
+    }
   });
 }
 
