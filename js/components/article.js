@@ -14,7 +14,7 @@ class Article extends HTMLElement {
         </div>
         <div class="content">
             <p>
-                <span class="contentParagraphSpan" id="${contentParagraphSpanId}">${content.substring(0, content.length > 250 ? 250 : content.length)}</span>
+                <span class="contentParagraphSpan">${content.substring(0, content.length > 250 ? 250 : content.length)}</span>
                 <span class="expand" id="${expandParagraphSpanId}">read more</span>
             </p>
         </div>

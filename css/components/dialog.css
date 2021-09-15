@@ -1,0 +1,38 @@
+#dialog {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: auto;
+}
+
+#dialog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255);
+  border: 1px black solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#dialog-content-p {
+  padding-top: 1rem;
+  white-space: pre-line;
+}
+
+#dialog-close {
+  width: calc(100% - 2rem);
+  text-align: end;
+  cursor: pointer;
+  text-decoration: underline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

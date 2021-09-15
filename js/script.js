@@ -11,7 +11,18 @@ window.addEventListener("DOMContentLoaded", async (_) => {
       }
     })
     .catch((error) => alert(error));
+  createDialog();
 });
+
+function createDialog() {
+  const dialog_close = document.getElementById("dialog-close");
+  let screen = document.getElementById("screen");
+  let dialog = document.getElementById("dialog");
+  dialog_close.addEventListener("click", function () {
+    screen.style.overflowY = "auto";
+    dialog.style.display = "none";
+  });
+}
 
 function createPage(key, title, articles) {
   const pageTitle = title;
@@ -53,29 +64,22 @@ function createArticle(body, key, heading, content, sources) {
 
   body.appendChild(article);
 
-  articleContentToggleClickListener(key, heading, content);
+  articleReadMoreClickListener(key, heading, content);
 
   addSources(key, heading, sources);
 }
 
-function articleContentToggleClickListener(key, heading, content) {
-  var contentEl = document.getElementById(
+function articleReadMoreClickListener(key, heading, content) {
+  let screen = document.getElementById("screen");
+  let dialog = document.getElementById("dialog");
+  let dialog_content_p = document.getElementById("dialog-content-p");
+  var expandEl = document.getElementById(
     key + "-" + heading + "-content-p-span-expand"
   );
-  var expandEl = document.getElementById(
-    key + "-" + heading + "-content-p-span-content"
-  );
-  contentEl.addEventListener("click", function () {
-    if (contentEl.innerHTML === "read more") {
-      expandEl.innerHTML = content;
-      contentEl.innerHTML = "show less";
-    } else {
-      expandEl.innerHTML = content.substring(
-        0,
-        content.length > 250 ? 250 : content.length
-      );
-      contentEl.innerHTML = "read more";
-    }
+  expandEl.addEventListener("click", function () {
+    screen.style.overflowY = "hidden";
+    dialog.style.display = "block";
+    dialog_content_p.innerHTML = content;
   });
 }
 
