@@ -66,35 +66,6 @@ function createArticle(body, key, heading, content, sources) {
   articleReadMoreClickListener(key, heading, content, sources);
 }
 
-function articleReadMoreClickListener(key, heading, content, sources) {
-  let screen = document.getElementById("screen");
-  let dialog = document.getElementById("dialog");
-  let dialog_heading = document.getElementById("dialog-heading");
-  let dialog_title = document.getElementById("dialog-title");
-  let dialog_content_p = document.getElementById("dialog-content-p");
-  let dialog_sources = document.getElementById("dialog-sources");
-  let sourcesEl = document.getElementById(key + "-" + heading + "-sources");
-  var expandEl = document.getElementById(
-    key + "-" + heading + "-content-p-span-expand"
-  );
-  expandEl.addEventListener("click", function () {
-    screen.style.overflowY = "hidden";
-    dialog.style.display = "block";
-    dialog_heading.innerHTML = heading;
-    dialog_title.innerHTML = formatTitle(key);
-    dialog_content_p.innerHTML = content;
-    dialog_sources.innerHTML = "";
-    for (let i = 0; i < sourcesEl.children.length; i++) {
-      let source = sourcesEl.children[i].cloneNode();
-      source.addEventListener("click", function () {
-        let link = sources[i].link == null ? "" : sources[i].link;
-        window.open(link, "_blank").focus();
-      });
-      dialog_sources.appendChild(source);
-    }
-  });
-}
-
 function addSources(key, heading, sources) {
   var sourcesElement = document.getElementById(
     key + "-" + heading + "-sources"
@@ -114,6 +85,41 @@ function addSources(key, heading, sources) {
     });
 
     sourcesElement.appendChild(source);
+  }
+}
+
+function articleReadMoreClickListener(key, heading, content, sources) {
+  let sourcesEl = document.getElementById(key + "-" + heading + "-sources");
+  if (content == "") {
+    sourcesEl.style.marginTop = "0.5rem";
+    let contentEl = document.getElementById(key + "-" + heading + "-content");
+    contentEl.style.display = "none";
+  } else {
+    let screen = document.getElementById("screen");
+    let dialog = document.getElementById("dialog");
+    let dialog_heading = document.getElementById("dialog-heading");
+    let dialog_title = document.getElementById("dialog-title");
+    let dialog_content_p = document.getElementById("dialog-content-p");
+    let dialog_sources = document.getElementById("dialog-sources");
+    var expandEl = document.getElementById(
+      key + "-" + heading + "-content-p-span-expand"
+    );
+    expandEl.addEventListener("click", function () {
+      screen.style.overflowY = "hidden";
+      dialog.style.display = "block";
+      dialog_heading.innerHTML = heading;
+      dialog_title.innerHTML = formatTitle(key);
+      dialog_content_p.innerHTML = content;
+      dialog_sources.innerHTML = "";
+      for (let i = 0; i < sourcesEl.children.length; i++) {
+        let source = sourcesEl.children[i].cloneNode();
+        source.addEventListener("click", function () {
+          let link = sources[i].link == null ? "" : sources[i].link;
+          window.open(link, "_blank").focus();
+        });
+        dialog_sources.appendChild(source);
+      }
+    });
   }
 }
 

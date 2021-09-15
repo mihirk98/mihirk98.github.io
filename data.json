@@ -44,6 +44,26 @@
                                     "source": "WebArticle"
                                 }
                             ]
+                        },
+                        "29-4-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "\"India Is Fighting To Avert Oxygen Shortage During Covid-19 Crisis\" published by Bloomberg Quint.",
+                                    "link": "https://www.bloombergquint.com/coronavirus-outbreak/india-is-fighting-to-avert-oxygen-shortage-during-covid-19-crisis",
+                                    "source": "WebArticle"
+                                }
+                            ]
+                        },
+                        "30-4-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "Six covid patients reportedly die due to oxygen shortage published by NDTV.",
+                                    "link": "https://www.ndtv.com/gurgaon-news/coronavirus-doctors-fled-as-oxygen-ran-out-allege-patients-relatives-in-viral-video-2428518",
+                                    "source": "WebArticle"
+                                }
+                            ]
                         }
                     }
                 ]
