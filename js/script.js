@@ -25,18 +25,32 @@ function createDialog() {
 
 function createPage(key, articles) {
   // Access screen
-  const screen = document.getElementById("screen");
+  const screenEl = document.getElementById("screen");
 
   // Create page
-  var page = document.createElement("page-component");
+  let page = document.createElement("page-component");
   page.setAttribute("key", key);
   page.setAttribute("title", formatTitle(key));
 
   // Add page to screen
-  screen.appendChild(page);
+  screenEl.appendChild(page);
 
   // Access page body
-  var body = document.getElementById(key + "-body");
+  let body = document.getElementById(key + "-body");
+
+  // Create sections
+  let sections = [];
+  let rows = 1;
+  if (screen.availHeight < screen.availWidth) {
+    rows = 3;
+  }
+
+  for (let i = 0; i < rows; i++) {
+    let section = document.createElement("div");
+    section.className += "section";
+    sections.push(section);
+    body.appendChild(section);
+  }
 
   // Loop through articles
   if (articles != null) {
@@ -46,7 +60,14 @@ function createPage(key, articles) {
       let article = Object.values(articles[0])[i];
       let content = article.content == null ? "" : article.content;
       let sources = article.sources == null ? [] : article.sources;
-      createArticle(body, key, heading, content, sources);
+      let section = (i + 1) % 3 === 0 ? 2 : (i + 1) % 3 === 2 ? 1 : 0;
+      createArticle(
+        sections[sections.length === 3 ? section : 0],
+        key,
+        heading,
+        content,
+        sources
+      );
     }
   }
 }

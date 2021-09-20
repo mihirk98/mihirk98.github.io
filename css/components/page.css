@@ -15,13 +15,13 @@
 }
 
 .body {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
+  flex-direction: row;
   padding-top: 1rem;
 }
 
-@media screen and (orientation: portrait) {
-  .body {
-    grid-template-columns: 100%;
-  }
+.section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
