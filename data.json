@@ -45,6 +45,42 @@
                                 }
                             ]
                         },
+                        "20-4-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "Shortage in Delhi hospitals published by NDTV.",
+                                    "link": "https://www.ndtv.com/delhi-news/coronavirus-sir-ganga-ram-hospital-gtb-hospital-get-oxygen-supply-after-delhi-high-court-pulls-up-centre-2418381",
+                                    "source": "WebArticle"
+                                }
+                            ]
+                        },
+                        "21-4-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "\"Nashik: Oxygen leak leaves 22 Covid-19 patients dead in India\" published by BBC.",
+                                    "link": "https://www.bbc.com/news/world-asia-india-56830418",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 2,
+                                    "desc": "Oxygen shortage reported in Delhi and Maharashtra published by AlJazeera.",
+                                    "link": "https://www.aljazeera.com/news/2021/4/21/india-covid-storm-hits-new-records-as-oxygen-supplies-run-short",
+                                    "source": "WebArticle"
+                                }
+                            ]
+                        },
+                        "23-4-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "Arvind Kejriwal begging Prime Minister Narendra Modi for help during the Covid19 second wave oxygen crisis.",
+                                    "link": "https://www.youtube.com/watch?v=OpO_mVvtkP0",
+                                    "source": "WebLink"
+                                }
+                            ]
+                        },
                         "29-4-2021": {
                             "sources": [
                                 {
