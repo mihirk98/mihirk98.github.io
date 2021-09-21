@@ -65,8 +65,14 @@
                                 },
                                 {
                                     "index": 2,
-                                    "desc": "Oxygen shortage reported in Delhi and Maharashtra published by AlJazeera.",
+                                    "desc": "Oxygen shortage reported in Delhi and Maharashtra published by Al Jazeera.",
                                     "link": "https://www.aljazeera.com/news/2021/4/21/india-covid-storm-hits-new-records-as-oxygen-supplies-run-short",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 3,
+                                    "desc": "Citizens using twitter to crowdsource oxygen supplies published by Reuters.",
+                                    "link": "https://www.reuters.com/world/india/twitter-becomes-platform-hope-amid-despair-indias-covid-crisis-2021-04-21/",
                                     "source": "WebArticle"
                                 }
                             ]
@@ -75,7 +81,7 @@
                             "sources": [
                                 {
                                     "index": 1,
-                                    "desc": "Arvind Kejriwal begging Prime Minister Narendra Modi for help during the Covid19 second wave oxygen crisis.",
+                                    "desc": "Delhi Chief Minister Arvind Kejriwal begging Prime Minister Narendra Modi for help during the Covid19 second wave oxygen crisis.",
                                     "link": "https://www.youtube.com/watch?v=OpO_mVvtkP0",
                                     "source": "WebLink"
                                 }
