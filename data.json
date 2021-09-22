@@ -65,12 +65,18 @@
                                 },
                                 {
                                     "index": 2,
+                                    "desc": "24 Covid19 patients die due to oxygen leak at Zakir Husain municipal hospital in Nashik published by NDTV.",
+                                    "link": "https://www.bbc.com/news/world-asia-india-56830418",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 3,
                                     "desc": "Oxygen shortage reported in Delhi and Maharashtra published by Al Jazeera.",
                                     "link": "https://www.aljazeera.com/news/2021/4/21/india-covid-storm-hits-new-records-as-oxygen-supplies-run-short",
                                     "source": "WebArticle"
                                 },
                                 {
-                                    "index": 3,
+                                    "index": 4,
                                     "desc": "Citizens using twitter to crowdsource oxygen supplies published by Reuters.",
                                     "link": "https://www.reuters.com/world/india/twitter-becomes-platform-hope-amid-despair-indias-covid-crisis-2021-04-21/",
                                     "source": "WebArticle"
@@ -84,6 +90,22 @@
                                     "desc": "Delhi Chief Minister Arvind Kejriwal begging Prime Minister Narendra Modi for help during the Covid19 second wave oxygen crisis.",
                                     "link": "https://www.youtube.com/watch?v=OpO_mVvtkP0",
                                     "source": "WebLink"
+                                },
+                                {
+                                    "index": 2,
+                                    "desc": "25 Coivid19 patients pass away in Ganga Ram Hospital, New Delhi pubished by The Economic Times.",
+                                    "link": "https://economictimes.indiatimes.com/news/india/oxygen-crisis-25-sickest-patients-die-at-delhis-sir-ganga-ram-hospital-in-last-24-hrs/articleshow/82208411.cms",
+                                    "source": "WebArticle"
+                                }
+                            ]
+                        },
+                        "25-4-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "Two pass away at Center of Diabetes and Allied Sciences in Gurugram due to oxygen shortage published by Hindustan Times.",
+                                    "link": "https://www.hindustantimes.com/cities/gurugram-news/two-more-deaths-in-gurugram-as-hospitals-grapple-with-low-oxygen-supply-101619460918976.html",
+                                    "source": "WebArticle"
                                 }
                             ]
                         },
@@ -103,6 +125,44 @@
                                     "index": 1,
                                     "desc": "Six covid patients reportedly die due to oxygen shortage published by NDTV.",
                                     "link": "https://www.ndtv.com/gurgaon-news/coronavirus-doctors-fled-as-oxygen-ran-out-allege-patients-relatives-in-viral-video-2428518",
+                                    "source": "WebArticle"
+                                }
+                            ]
+                        },
+                        "1-5-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "Four Covid19 patients die at the District Hospital in Barwani, Madhya Pradesh due to problems with oxygen supply published by NDTV.",
+                                    "link": "https://www.ndtv.com/india-news/oxygen-stopped-families-allege-4-deaths-hospital-denies-charge-2426828",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 2,
+                                    "desc": "\"12 lives lost in Delhi's Batra Hospital\" published by The Hindu.",
+                                    "link": "https://www.ndtv.com/india-news/oxygen-stopped-families-allege-4-deaths-hospital-denies-charge-2426828",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 3,
+                                    "desc": "16 Covid19 patients die in Andhra Pradesh hospitals due to lack of oxygen.",
+                                    "link": "https://timesofindia.indiatimes.com/india/oxygen-shortage-in-two-andhra-pradesh-hospitals-kill-16-covid-patients/articleshow/82349671.cms",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "index": 4,
+                                    "desc": "\"J&K: Four COVID deaths at ASCOMS hospital allegedly due to oxygen shortage\" published by Times Now News.",
+                                    "link": "https://www.timesnownews.com/videos/times-now/india/jk-four-covid-deaths-at-ascoms-hospital-allegedly-due-to-oxygen-shortage-govt-to-probe-the-matter/96215",
+                                    "source": "WebArticle"
+                                }
+                            ]
+                        },
+                        "2-5-2021": {
+                            "sources": [
+                                {
+                                    "index": 1,
+                                    "desc": "Five Covid19 patients allegdly die in the Meerut, Uttar Pradesh due to disruption of oxygen supply published by The Hindu.",
+                                    "link": "https://www.thehindu.com/news/national/other-states/probe-into-death-of-5-due-to-disruption-of-oxygen-supply-in-uttar-pradesh/article34472794.ece",
                                     "source": "WebArticle"
                                 }
                             ]
