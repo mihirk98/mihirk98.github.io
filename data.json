@@ -176,48 +176,46 @@
                 "type": "encyclopedia",
                 "archive": [
                     {
-                        "repository": [
-                            {
-                                "sources": [
-                                    {
-                                        "link": "https://www.deccanherald.com/national/east-and-northeast/evicted-from-government-land-over-5000-muslims-in-assam-termed-illegal-settlers-become-homeless-1032861.html",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://www.eastmojo.com/news/2021/09/23/sipajhar-eviction-drive-police-arrest-photographer-in-video/",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://scroll.in/latest/1006061/assam-at-least-three-feared-dead-in-police-firing-during-eviction-drive-in-darrang",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://www.freepressjournal.in/india/are-we-bangladeshis-family-cries-after-protestor-brutally-killed-in-assams-darrang-during-eviction-drive",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://thewire.in/rights/assam-police-open-fire-local-protesting-eviction-drive-darrang",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://www.ndtv.com/india-news/on-camera-assam-cops-thrash-protesters-open-fire-during-eviction-drive-2551083",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://www.ndtv.com/india-news/assam-family-mourn-man-beaten-to-death-on-camera-they-killed-my-son-2552168",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://www.aljazeera.com/news/2021/9/24/india-assam-photographer-video-stomps-muslim-police",
-                                        "source": "WebArticle"
-                                    },
-                                    {
-                                        "link": "https://www.instagram.com/p/CUM5hLzvShC/",
-                                        "source": "WebLink"
-                                    }
-                                ]
-                            }
-                        ]
+                        "repository": {
+                            "sources": [
+                                {
+                                    "link": "https://www.deccanherald.com/national/east-and-northeast/evicted-from-government-land-over-5000-muslims-in-assam-termed-illegal-settlers-become-homeless-1032861.html",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://www.eastmojo.com/news/2021/09/23/sipajhar-eviction-drive-police-arrest-photographer-in-video/",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://scroll.in/latest/1006061/assam-at-least-three-feared-dead-in-police-firing-during-eviction-drive-in-darrang",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://www.freepressjournal.in/india/are-we-bangladeshis-family-cries-after-protestor-brutally-killed-in-assams-darrang-during-eviction-drive",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://thewire.in/rights/assam-police-open-fire-local-protesting-eviction-drive-darrang",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://www.ndtv.com/india-news/on-camera-assam-cops-thrash-protesters-open-fire-during-eviction-drive-2551083",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://www.ndtv.com/india-news/assam-family-mourn-man-beaten-to-death-on-camera-they-killed-my-son-2552168",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://www.aljazeera.com/news/2021/9/24/india-assam-photographer-video-stomps-muslim-police",
+                                    "source": "WebArticle"
+                                },
+                                {
+                                    "link": "https://www.instagram.com/p/CUM5hLzvShC/",
+                                    "source": "WebLink"
+                                }
+                            ]
+                        }
                     }
                 ]
             }
