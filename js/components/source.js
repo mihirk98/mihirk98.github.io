@@ -4,7 +4,7 @@ class Source extends HTMLElement {
     const desc = this.attributes.desc.value;
     this.innerHTML = `
     <div class="source">
-        <h4>[${index}]&nbsp</h4>
+        <h4 class="index">[${index}]&nbsp</h4>
         <h4 class="link">${desc}</h4>
     </div>
     `;

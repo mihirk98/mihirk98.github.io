@@ -40,6 +40,10 @@
   text-decoration: underline;
 }
 
+.index {
+  white-space: nowrap;
+}
+
 .websiteLink {
   white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
   white-space: -webkit-pre-wrap; /* Chrome & Safari */
