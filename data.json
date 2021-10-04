@@ -176,7 +176,7 @@
                 "type": "encyclopedia",
                 "archive": [
                     {
-                        "repository": {
+                        "Repository": {
                             "sources": [
                                 {
                                     "link": "https://www.deccanherald.com/national/east-and-northeast/evicted-from-government-land-over-5000-muslims-in-assam-termed-illegal-settlers-become-homeless-1032861.html",
@@ -213,6 +213,28 @@
                                 {
                                     "link": "https://www.instagram.com/p/CUM5hLzvShC/",
                                     "source": "WebLink"
+                                },
+                                {
+                                    "link": "https://www.thequint.com/voices/opinion/assam-eviction-violence-under-sarma-rule-muslims-face-a-double-attack",
+                                    "source": "WebArticle"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "indianFarmersProtest": {
+                "type": "chronology",
+                "archive": [
+                    {
+                        "4-10-2021": {
+                            "sources": [
+                                {
+                                    "desc": "\"Eight killed in UP after convoy linked to union minister runs over farmer protesters\" published by The Caravan.",
+                                    "link": "https://caravanmagazine.in/crime/eight-killed-lakhimpur-kheri-farmer-protest-ajay-mishra-teni-convoy",
+                                    "source": "WebArticle"
                                 }
                             ]
                         }

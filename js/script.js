@@ -94,11 +94,13 @@ function addSources(key, heading, sources) {
 
   let length = sources.length;
   for (let i = 0; i < length; i++) {
-    let index = sources[i].index;
+    let index = sources[i].index === undefined ? "_" : sources[i].index;
     let link = sources[i].link == null ? "" : sources[i].link;
-    let desc = sources[i].desc == null ? sources[i].link : sources[i].desc;
+    let desc = sources[i].desc == null ? link : sources[i].desc;
     var source = document.createElement("source-component");
     source.setAttribute("index", index);
+    // Check if desc is a website link
+    if (desc === link) source.classList.add("websiteLink");
     source.setAttribute("desc", desc);
 
     source.addEventListener("click", function () {
