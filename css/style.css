@@ -1,7 +1,7 @@
 /* Reset CSS for browser consistency */
 html,
 body,
-h1,
+h2,
 h3,
 h4,
 p {
@@ -24,7 +24,7 @@ p {
 }
 
 /* Text */
-h1 {
+h2 {
   font-size: 2rem;
   font-weight: normal;
   color: white;

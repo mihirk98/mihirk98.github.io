@@ -46,7 +46,7 @@ function createPage(key, articles) {
   }
 
   for (let i = 0; i < rows; i++) {
-    let section = document.createElement("div");
+    let section = document.createElement("section");
     section.className += "section";
     sections.push(section);
     body.appendChild(section);

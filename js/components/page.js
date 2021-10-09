@@ -5,7 +5,7 @@ class Page extends HTMLElement {
     this.innerHTML = `
     <div class="page" id=${key}>
       <div class="title">
-        <h1>${title}</h1>
+        <h2>${title}</h2>
       </div>
       <div class="body" id="${key}-body">
       </div>

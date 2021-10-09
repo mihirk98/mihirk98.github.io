@@ -11,7 +11,7 @@ class Article extends HTMLElement {
     const expandParagraphSpanId = key + "-" + heading + "-content-p-span-expand";
 
     this.innerHTML = `
-    <div class="article">
+    <article class="article">
         <div class="heading">
             <h3>${heading}</h3>
         </div>
@@ -23,7 +23,7 @@ class Article extends HTMLElement {
         </div>
         <div class="sources" id="${key}-${heading}-sources">
         </div>
-    </div>
+    </article>
     `;
   }
 }
