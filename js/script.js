@@ -85,6 +85,7 @@ function createPage(key, title, articles) {
         sections[sections.length === 3 ? section : 0],
         key,
         heading,
+        title,
         content,
         sources
       );
@@ -92,7 +93,7 @@ function createPage(key, title, articles) {
   }
 }
 
-function createArticle(body, key, heading, content, sources) {
+function createArticle(body, key, heading, title, content, sources) {
   // console.log(sources);
   // Create article
   var article = document.createElement("article-component");
@@ -104,7 +105,7 @@ function createArticle(body, key, heading, content, sources) {
 
   addSources(key, heading, sources);
 
-  articleReadMoreClickListener(key, heading, content, sources);
+  articleReadMoreClickListener(key, heading, title, content, sources);
 }
 
 function addSources(key, heading, sources) {
@@ -131,7 +132,7 @@ function addSources(key, heading, sources) {
   }
 }
 
-function articleReadMoreClickListener(key, heading, content, sources) {
+function articleReadMoreClickListener(key, heading, title, content, sources) {
   let sourcesEl = document.getElementById(key + "-" + heading + "-sources");
   if (content == "") {
     sourcesEl.style.marginTop = "0.5rem";
