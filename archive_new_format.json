@@ -1,0 +1,38 @@
+{
+    "archives": {
+        "lackOfOxygenCovid19DeathsIndia": {
+            "type": "chronology",
+            "archive": {
+                "15-9-2020": {
+                    "content": "In September 2020, India experienced its first Covid19 wave peak [1]. On September 15, 2020, government of India's (GOI) Ministry of Health and Family Welfare (MOHFW) held a press briefing \"on the actions taken, preparedness and updates on COVID19\" [2].\n\nAn unidentified reporter asks, \"We are hearing about acute shortage of oxygen in different states and there have been deaths due to lack of oxygen supplies. Is the Central government planning on intervening to ensure the supplies of oxygen? What is the planning of the government?\". Rajesh Bhushan clears his throat as he prepares to speak. He grins through his mask: almost as though he was expecting the question. He begins in Hindi, \"Oxygen, uhh, is of two types ...\" as he goes on to explain the types of oxygen produced. He has a gleeful look in his eyes as he answers a question nobody asked. He finishes by concluding that since India is producing more oxygen than it needs, \"there is absolutely no shortage of oxygen\". Meanwhile, Ankit Sethia scrambles to find oxygen for his patients at SS Hospital Research Centre in Bhiwandi [3]. In Madhya Pradesh's Dewas district, four patients pass away from oxygen shortage [4]. The surplus oxygen is no where to be found.\n\nMr. Rajesh, MOHFW Secretary at the time, continues. Hospitals and state governments are to be blamed for the oxygen shortage that doesn't exist. As a teacher teaches students, Rajesh patiently explains that the reason there is and isn't an oxygen shortage is because hospitals are mismanaging inventory. Furthermore, it is the state government's responsibility to ensure that hospitals are alerted of potential surges in case loads. So, coyly, Mr. Rajesh answers the first question. No, the central government does not plan to intervene to ensure oxygen supply. Benevolently, he adds, that if state governments need the national government's help, they need only ask. Rajesh, oddly seeming to enjoy himself like a schoolboy who has all the right answers, keeps going. He lists various organisation like PESO, DGCI and LIAR which are a part of the \"virtual control room\" set-up by the central government, to answer the second question. The central government has no plan. So, Rajesh concludes and asserts yet again, there is no oxygen crisis.",
+                    "sources": [
+                        {
+                            "index": 1,
+                            "desc": "Covid19 India Org- a volunteer driven crowdsourced website to track coronavirus in India.",
+                            "link": "https://www.covid19india.org",
+                            "source": "WebLink"
+                        },
+                        {
+                            "index": 2,
+                            "desc": "GOI MOHFW press briefing published by PIB India on September 15, 2020.",
+                            "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1654663",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 3,
+                            "desc": "\"Coronavirus: India faces oxygen scarcity as cases surge\" authored by Soutik Biswas, published by BBC on September 15, 2020.",
+                            "link": "https://www.bbc.com/news/world-asia-india-54139112",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 4,
+                            "desc": "\"4 Covid Patients Die In Madhya Pradesh After Oxygen Cylinder Shortage\" published by NDTV.",
+                            "link": "https://www.ndtv.com/india-news/4-covid-patients-die-in-madhya-pradesh-after-oxygen-cylinder-shortage-2293574",
+                            "source": "WebArticle"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

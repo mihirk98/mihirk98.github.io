@@ -1,246 +1,183 @@
 {
-    "archives": [
-        {
-            "lackOfOxygenCovid19DeathsIndia": {
-                "type": "chronology",
-                "archive": [
-                    {
-                        "15-9-2020": {
-                            "content": "In September 2020, India experienced its first Covid19 wave peak [1]. On September 15, 2020, government of India's (GOI) Ministry of Health and Family Welfare (MOHFW) held a press briefing \"on the actions taken, preparedness and updates on COVID19\" [2].\n\nAn unidentified reporter asks, \"We are hearing about acute shortage of oxygen in different states and there have been deaths due to lack of oxygen supplies. Is the Central government planning on intervening to ensure the supplies of oxygen? What is the planning of the government?\". Rajesh Bhushan clears his throat as he prepares to speak. He grins through his mask: almost as though he was expecting the question. He begins in Hindi, \"Oxygen, uhh, is of two types ...\" as he goes on to explain the types of oxygen produced. He has a gleeful look in his eyes as he answers a question nobody asked. He finishes by concluding that since India is producing more oxygen than it needs, \"there is absolutely no shortage of oxygen\". Meanwhile, Ankit Sethia scrambles to find oxygen for his patients at SS Hospital Research Centre in Bhiwandi [3]. In Madhya Pradesh's Dewas district, four patients pass away from oxygen shortage [4]. The surplus oxygen is no where to be found.\n\nMr. Rajesh, MOHFW Secretary at the time, continues. Hospitals and state governments are to be blamed for the oxygen shortage that doesn't exist. As a teacher teaches students, Rajesh patiently explains that the reason there is and isn't an oxygen shortage is because hospitals are mismanaging inventory. Furthermore, it is the state government's responsibility to ensure that hospitals are alerted of potential surges in case loads. So, coyly, Mr. Rajesh answers the first question. No, the central government does not plan to intervene to ensure oxygen supply. Benevolently, he adds, that if state governments need the national government's help, they need only ask. Rajesh, oddly seeming to enjoy himself like a schoolboy who has all the right answers, keeps going. He lists various organisation like PESO, DGCI and LIAR which are a part of the \"virtual control room\" set-up by the central government, to answer the second question. The central government has no plan. So, Rajesh concludes and asserts yet again, there is no oxygen crisis.",
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Covid19 India Org- a volunteer driven crowdsourced website to track coronavirus in India.",
-                                    "link": "https://www.covid19india.org",
-                                    "source": "WebLink"
-                                },
-                                {
-                                    "index": 2,
-                                    "desc": "GOI MOHFW press briefing published by PIB India on September 15, 2020.",
-                                    "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1654663",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 3,
-                                    "desc": "\"Coronavirus: India faces oxygen scarcity as cases surge\" authored by Soutik Biswas, published by BBC on September 15, 2020.",
-                                    "link": "https://www.bbc.com/news/world-asia-india-54139112",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 4,
-                                    "desc": "\"4 Covid Patients Die In Madhya Pradesh After Oxygen Cylinder Shortage\" published by NDTV.",
-                                    "link": "https://www.ndtv.com/india-news/4-covid-patients-die-in-madhya-pradesh-after-oxygen-cylinder-shortage-2293574",
-                                    "source": "WebArticle"
-                                }
-                            ]
+    "archives": {
+        "caaProtests2019": {
+            "title": "CAA Protests 2019",
+            "type": "chronology",
+            "archive": {
+                "9-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://thewire.in/government/citizenship-amendment-bill-to-be-tabled-in-lok-sabha-on-monday",
+                            "source": "WebArticle"
                         },
-                        "20-10-2020": {
-                            "content": "On October 20, 2020 MOHFW held a follow-up press briefing [1]. Rajesh Bhushan announces, looking gleeful as ever, that today he will enlighten us about the progress made by the country to address the non-existent oxygen crisis. First, infrastructure augmentation. Rajesh shamelessly admits that in April 2020, India had roughly 57 thousand oxygen supported,  23 thousand ICU and 12 thousand ventilator beds for a population of 1.4 billion. He takes credit for the desperate and last minute “infrastructure augmentation” efforts to improve India’s severely weak healthcare system since the pandemic began. Further, he claims that the country is now prepared to easily handle any future spikes in cases. He boasts that India has increased its medical oxygen production capacity, beating the same old drum, without acknowledging that the oxygen crisis is a logistical one and not one of production.\n\nSecond, ensuring uninterrupted supply of medical oxygen. Rajesh lists a few common sense policies that the government delayed implementing further exhibiting their incompetency. Third,  monitoring and co-ordination where Rajesh displayed his habit of repeating himself. Finally, proactive interventions which were by no means proactive.",
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Follow-up GOI MOHFW press briefing titled \"No shortage of medical oxygen in the country:  Health Secretary\" published by PIB India on September 15, 2020.",
-                                    "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1666181",
-                                    "source": "WebArticle"
-                                }
-                            ]
+                        {
+                            "index": 2,
+                            "link": "https://web.archive.org/web/20191211202337/https://liveupdates.hindustantimes.com/india/parliament-winter-session-live-updates-citizenship-amendment-bill-in-lok-sabha-21575867624874.html",
+                            "source": "WebArticle"
                         },
-                        "20-4-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Shortage in Delhi hospitals published by NDTV.",
-                                    "link": "https://www.ndtv.com/delhi-news/coronavirus-sir-ganga-ram-hospital-gtb-hospital-get-oxygen-supply-after-delhi-high-court-pulls-up-centre-2418381",
-                                    "source": "WebArticle"
-                                }
-                            ]
-                        },
-                        "21-4-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "\"Nashik: Oxygen leak leaves 22 Covid-19 patients dead in India\" published by BBC.",
-                                    "link": "https://www.bbc.com/news/world-asia-india-56830418",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 2,
-                                    "desc": "24 Covid19 patients die due to oxygen leak at Zakir Husain municipal hospital in Nashik published by NDTV.",
-                                    "link": "https://www.bbc.com/news/world-asia-india-56830418",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 3,
-                                    "desc": "Oxygen shortage reported in Delhi and Maharashtra published by Al Jazeera.",
-                                    "link": "https://www.aljazeera.com/news/2021/4/21/india-covid-storm-hits-new-records-as-oxygen-supplies-run-short",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 4,
-                                    "desc": "Citizens using twitter to crowdsource oxygen supplies published by Reuters.",
-                                    "link": "https://www.reuters.com/world/india/twitter-becomes-platform-hope-amid-despair-indias-covid-crisis-2021-04-21/",
-                                    "source": "WebArticle"
-                                }
-                            ]
-                        },
-                        "23-4-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Delhi Chief Minister Arvind Kejriwal begging Prime Minister Narendra Modi for help during the Covid19 second wave oxygen crisis.",
-                                    "link": "https://www.youtube.com/watch?v=OpO_mVvtkP0",
-                                    "source": "WebLink"
-                                },
-                                {
-                                    "index": 2,
-                                    "desc": "25 Covid19 patients pass away in Ganga Ram Hospital, New Delhi pubished by The Economic Times.",
-                                    "link": "https://economictimes.indiatimes.com/news/india/oxygen-crisis-25-sickest-patients-die-at-delhis-sir-ganga-ram-hospital-in-last-24-hrs/articleshow/82208411.cms",
-                                    "source": "WebArticle"
-                                }
-                            ]
-                        },
-                        "25-4-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Two pass away at Center of Diabetes and Allied Sciences in Gurugram due to oxygen shortage published by Hindustan Times.",
-                                    "link": "https://www.hindustantimes.com/cities/gurugram-news/two-more-deaths-in-gurugram-as-hospitals-grapple-with-low-oxygen-supply-101619460918976.html",
-                                    "source": "WebArticle"
-                                }
-                            ]
-                        },
-                        "29-4-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "\"India Is Fighting To Avert Oxygen Shortage During Covid-19 Crisis\" published by Bloomberg Quint.",
-                                    "link": "https://www.bloombergquint.com/coronavirus-outbreak/india-is-fighting-to-avert-oxygen-shortage-during-covid-19-crisis",
-                                    "source": "WebArticle"
-                                }
-                            ]
-                        },
-                        "30-4-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Six Covid19 patients reportedly die due to oxygen shortage published by NDTV.",
-                                    "link": "https://www.ndtv.com/gurgaon-news/coronavirus-doctors-fled-as-oxygen-ran-out-allege-patients-relatives-in-viral-video-2428518",
-                                    "source": "WebArticle"
-                                }
-                            ]
-                        },
-                        "1-5-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Four Covid19 patients die at the District Hospital in Barwani, Madhya Pradesh due to problems with oxygen supply published by NDTV.",
-                                    "link": "https://www.ndtv.com/india-news/oxygen-stopped-families-allege-4-deaths-hospital-denies-charge-2426828",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 2,
-                                    "desc": "\"12 lives lost in Delhi's Batra Hospital\" published by The Hindu.",
-                                    "link": "https://www.ndtv.com/india-news/oxygen-stopped-families-allege-4-deaths-hospital-denies-charge-2426828",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 3,
-                                    "desc": "16 Covid19 patients die in Andhra Pradesh hospitals due to lack of oxygen.",
-                                    "link": "https://timesofindia.indiatimes.com/india/oxygen-shortage-in-two-andhra-pradesh-hospitals-kill-16-covid-patients/articleshow/82349671.cms",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "index": 4,
-                                    "desc": "\"J&K: Four COVID deaths at ASCOMS hospital allegedly due to oxygen shortage\" published by Times Now News.",
-                                    "link": "https://www.timesnownews.com/videos/times-now/india/jk-four-covid-deaths-at-ascoms-hospital-allegedly-due-to-oxygen-shortage-govt-to-probe-the-matter/96215",
-                                    "source": "WebArticle"
-                                }
-                            ]
-                        },
-                        "2-5-2021": {
-                            "sources": [
-                                {
-                                    "index": 1,
-                                    "desc": "Five Covid19 patients allegdly die in the Meerut, Uttar Pradesh due to disruption of oxygen supply published by The Hindu.",
-                                    "link": "https://www.thehindu.com/news/national/other-states/probe-into-death-of-5-due-to-disruption-of-oxygen-supply-in-uttar-pradesh/article34472794.ece",
-                                    "source": "WebArticle"
-                                }
-                            ]
+                        {
+                            "index": 3,
+                            "link": "https://www.livemint.com/news/india/amit-shah-to-table-citizenship-amendment-bill-in-lok-sabha-today-11575855950416.html",
+                            "source": "WebArticle"
                         }
-                    }
-                ]
+                    ]
+                },
+                "10-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://www.aljazeera.com/news/2019/12/10/in-indias-northeast-protesters-rally-against-citizenship-bill/",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 2,
+                            "link": "https://timesofindia.indiatimes.com/city/agartala/anti-cab-protests-turn-violent-in-tripura/articleshow/72472009.cms",
+                            "source": "WebArticle"
+                        }
+                    ]
+                },
+                "11-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://www.thehindu.com/news/national/parliament-clears-citizenship-amendment-bill/article30279517.ece",
+                            "source": "WebArticle"
+                        }
+                    ]
+                },
+                "12-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://economictimes.indiatimes.com/news/politics-and-nation/anti-cab-protests-in-assam-police-opens-fire-on-protestors/articleshow/72487251.cms",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 2,
+                            "link": "https://economictimes.indiatimes.com/news/politics-and-nation/citizenship-amendment-bill-gets-presidents-assent-becomes-act/articleshow/72498176.cms",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 3,
+                            "link": "https://egazette.nic.in/WriteReadData/2019/214646.pdf",
+                            "source": "Text"
+                        },
+                        {
+                            "index": 4,
+                            "link": "https://www.indiatoday.in/india/story/peasant-leader-akhil-gogoi-arrested-in-assam-s-jorhat-1627843-2019-12-12",
+                            "source": "WebArticle"
+                        }
+                    ]
+                },
+                "13-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://www.thehindu.com/news/national/citizenship-amendment-act-comes-into-effect-from-jan-10/article30537592.ece",
+                            "source": "WebArticle"
+                        }
+                    ]
+                },
+                "14-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://www.telegraphindia.com/india/different-protest-voices-at-jantar-mantar/cid/1727006",
+                            "source": "WebArticle"
+                        }
+                    ]
+                },
+                "15-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://timesofindia.indiatimes.com/videos/news/assam-death-toll-rises-to-5-in-protests-against-citizenship-act/videoshow/72666788.cms",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 2,
+                            "link": "https://economictimes.indiatimes.com/news/politics-and-nation/anti-caa-stir-violent-protests-rock-jamia-amu-bengal-boils-uneasy-calm-in-assam/articleshow/72698734.cms",
+                            "source": "WebArticle"
+                        }
+                    ]
+                },
+                "16-12-2019": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://www.bbc.com/news/world-asia-india-50805092",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 2,
+                            "link": "https://www.thequint.com/news/india/citizenship-amendment-bill-act-protests-north-east-assam-guwahati-tripura-west-bengal-live-updates",
+                            "source": "WebArticle"
+                        }
+                    ]
+                }
             }
         },
-        {
-            "darrangAssamMuslimsEvictionDrive": {
-                "type": "encyclopedia",
-                "archive": [
-                    {
-                        "Repository": {
-                            "sources": [
-                                {
-                                    "link": "https://www.deccanherald.com/national/east-and-northeast/evicted-from-government-land-over-5000-muslims-in-assam-termed-illegal-settlers-become-homeless-1032861.html",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://www.eastmojo.com/news/2021/09/23/sipajhar-eviction-drive-police-arrest-photographer-in-video/",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://scroll.in/latest/1006061/assam-at-least-three-feared-dead-in-police-firing-during-eviction-drive-in-darrang",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://www.freepressjournal.in/india/are-we-bangladeshis-family-cries-after-protestor-brutally-killed-in-assams-darrang-during-eviction-drive",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://thewire.in/rights/assam-police-open-fire-local-protesting-eviction-drive-darrang",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://www.ndtv.com/india-news/on-camera-assam-cops-thrash-protesters-open-fire-during-eviction-drive-2551083",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://www.ndtv.com/india-news/assam-family-mourn-man-beaten-to-death-on-camera-they-killed-my-son-2552168",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://www.aljazeera.com/news/2021/9/24/india-assam-photographer-video-stomps-muslim-police",
-                                    "source": "WebArticle"
-                                },
-                                {
-                                    "link": "https://www.instagram.com/p/CUM5hLzvShC/",
-                                    "source": "WebLink"
-                                },
-                                {
-                                    "link": "https://www.thequint.com/voices/opinion/assam-eviction-violence-under-sarma-rule-muslims-face-a-double-attack",
-                                    "source": "WebArticle"
-                                }
-                            ]
+        "lackOfOxygenCrisisCovid19India": {
+            "title": "Lack of oxygen crisis COVID-19 India",
+            "type": "chronology",
+            "archive": {
+                "15-9-2020": {
+                    "content": "In September 2020, India experienced its first Covid19 wave peak [1]. On September 15, 2020, government of India's (GOI) Ministry of Health and Family Welfare (MOHFW) held a press briefing \"on the actions taken, preparedness and updates on COVID19\" [2].\n\nAn unidentified reporter asks, \"We are hearing about acute shortage of oxygen in different states and there have been deaths due to lack of oxygen supplies. Is the Central government planning on intervening to ensure the supplies of oxygen? What is the planning of the government?\". Rajesh Bhushan clears his throat as he prepares to speak. He grins through his mask: almost as though he was expecting the question. He begins in Hindi, \"Oxygen, uhh, is of two types ...\" as he goes on to explain the types of oxygen produced. He has a gleeful look in his eyes as he answers a question nobody asked. He finishes by concluding that since India is producing more oxygen than it needs, \"there is absolutely no shortage of oxygen\". Meanwhile, Ankit Sethia scrambles to find oxygen for his patients at SS Hospital Research Centre in Bhiwandi [3]. In Madhya Pradesh's Dewas district, four patients pass away from oxygen shortage [4]. The surplus oxygen is no where to be found.\n\nMr. Rajesh, MOHFW Secretary at the time, continues. Hospitals and state governments are to be blamed for the oxygen shortage that doesn't exist. As a teacher teaches students, Rajesh patiently explains that the reason there is and isn't an oxygen shortage is because hospitals are mismanaging inventory. Furthermore, it is the state government's responsibility to ensure that hospitals are alerted of potential surges in case loads. So, coyly, Mr. Rajesh answers the first question. No, the central government does not plan to intervene to ensure oxygen supply. Benevolently, he adds, that if state governments need the national government's help, they need only ask. Rajesh, oddly seeming to enjoy himself like a schoolboy who has all the right answers, keeps going. He lists various organisation like PESO, DGCI and LIAR which are a part of the \"virtual control room\" set-up by the central government, to answer the second question. The central government has no plan. So, Rajesh concludes and asserts yet again, there is no oxygen crisis.",
+                    "sources": [
+                        {
+                            "index": 1,
+                            "desc": "Covid19 India Org- a volunteer driven crowdsourced website to track coronavirus in India.",
+                            "link": "https://www.covid19india.org",
+                            "source": "WebLink"
+                        },
+                        {
+                            "index": 2,
+                            "desc": "GOI MOHFW press briefing published by PIB India on September 15, 2020.",
+                            "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1654663",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 3,
+                            "desc": "\"Coronavirus: India faces oxygen scarcity as cases surge\" authored by Soutik Biswas, published by BBC on September 15, 2020.",
+                            "link": "https://www.bbc.com/news/world-asia-india-54139112",
+                            "source": "WebArticle"
+                        },
+                        {
+                            "index": 4,
+                            "desc": "\"4 Covid Patients Die In Madhya Pradesh After Oxygen Cylinder Shortage\" published by NDTV.",
+                            "link": "https://www.ndtv.com/india-news/4-covid-patients-die-in-madhya-pradesh-after-oxygen-cylinder-shortage-2293574",
+                            "source": "WebArticle"
                         }
-                    }
-                ]
+                    ]
+                },
+                "20-10-2020": {
+                    "content": "On October 20, 2020 MOHFW held a follow-up press briefing [1]. Rajesh Bhushan announces, looking gleeful as ever, that today he will enlighten us about the progress made by the country to address the non-existent oxygen crisis. First, infrastructure augmentation. Rajesh shamelessly admits that in April 2020, India had roughly 57 thousand oxygen supported,  23 thousand ICU and 12 thousand ventilator beds for a population of 1.4 billion. He takes credit for the desperate and last minute “infrastructure augmentation” efforts to improve India’s severely weak healthcare system since the pandemic began. Further, he claims that the country is now prepared to easily handle any future spikes in cases. He boasts that India has increased its medical oxygen production capacity, beating the same old drum, without acknowledging that the oxygen crisis is a logistical one and not one of production.\n\nSecond, ensuring uninterrupted supply of medical oxygen. Rajesh lists a few common sense policies that the government delayed implementing further exhibiting their incompetency. Third,  monitoring and co-ordination where Rajesh displayed his habit of repeating himself. Finally, proactive interventions which were by no means proactive.",
+                    "sources": [
+                        {
+                            "index": 1,
+                            "desc": "Follow-up GOI MOHFW press briefing titled \"No shortage of medical oxygen in the country:  Health Secretary\" published by PIB India on September 15, 2020.",
+                            "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1666181",
+                            "source": "WebArticle"
+                        }
+                    ]
+                }
             }
         },
-        {
-            "indianFarmersProtest": {
-                "type": "chronology",
-                "archive": [
-                    {
-                        "4-10-2021": {
-                            "sources": [
-                                {
-                                    "desc": "\"Eight killed in UP after convoy linked to union minister runs over farmer protesters\" published by The Caravan.",
-                                    "link": "https://caravanmagazine.in/crime/eight-killed-lakhimpur-kheri-farmer-protest-ajay-mishra-teni-convoy",
-                                    "source": "WebArticle"
-                                }
-                            ]
+        "islamophobiaInIndia": {
+            "title": "Islamophobia in India",
+            "type": "chronology",
+            "archive": {
+                "5-1-2022": {
+                    "sources": [
+                        {
+                            "index": 1,
+                            "link": "https://thewire.in/society/chhattisgarh-video-shows-hindu-villagers-taking-oath-to-boycott-muslims",
+                            "source": "WebArticle"
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
-    ]
+    }
 }

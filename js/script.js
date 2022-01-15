@@ -1,19 +1,13 @@
+var data;
+
+window.addEventListener("resize", createPages);
+
 window.addEventListener("DOMContentLoaded", async (_) => {
-  await fetch("./data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      let length = Object.keys(data.archives).length;
-      for (var i = 0; i < length; i++) {
-        let key = Object.keys(data.archives[i])[0];
-        let value = Object.values(data.archives[i]);
-        createPage(key, value[0].archive);
-      }
-    })
-    .catch((error) => alert(error));
-  createDialog();
+  getData();
+  dialogCloseClick();
 });
 
-function createDialog() {
+function dialogCloseClick() {
   const dialog_close = document.getElementById("dialog-close");
   let screen = document.getElementById("screen");
   let dialog = document.getElementById("dialog");
@@ -23,14 +17,38 @@ function createDialog() {
   });
 }
 
-function createPage(key, articles) {
+async function getData() {
+  await fetch("./data.json")
+    .then((response) => response.json())
+    .then((json) => {
+      data = json;
+      createPages();
+    })
+    .catch((error) => alert(error));
+}
+
+function createPages() {
+  // Access screen
+  const screenEl = document.getElementById("screen");
+  screenEl.textContent = "";
+  let archivesKeys = Object.keys(data.archives);
+  let archiveValues = Object.values(data.archives);
+  let archivesLength = archivesKeys.length;
+  for (var i = 0; i < archivesLength; i++) {
+    let key = archivesKeys[i];
+    let value = archiveValues[i];
+    createPage(key, value.title, value.archive);
+  }
+}
+
+function createPage(key, title, articles) {
   // Access screen
   const screenEl = document.getElementById("screen");
 
   // Create page
   let page = document.createElement("page-component");
   page.setAttribute("key", key);
-  page.setAttribute("title", formatTitle(key));
+  page.setAttribute("title", title);
 
   // Add page to screen
   screenEl.appendChild(page);
@@ -41,7 +59,7 @@ function createPage(key, articles) {
   // Create sections
   let sections = [];
   let rows = 1;
-  if (screen.availHeight < screen.availWidth) {
+  if (window.innerHeight < window.innerWidth) {
     rows = 3;
   }
 
@@ -54,10 +72,12 @@ function createPage(key, articles) {
 
   // Loop through articles
   if (articles != null) {
-    let length = Object.keys(articles[0]).length;
-    for (var i = 0; i < length; i++) {
-      let heading = Object.keys(articles[0])[i];
-      let article = Object.values(articles[0])[i];
+    let articlesKeys = Object.keys(articles);
+    let articlesValues = Object.values(articles);
+    let articlesLength = articlesKeys.length;
+    for (var i = 0; i < articlesLength; i++) {
+      let heading = articlesKeys[i];
+      let article = articlesValues[i];
       let content = article.content == null ? "" : article.content;
       let sources = article.sources == null ? [] : article.sources;
       let section = (i + 1) % 3 === 0 ? 2 : (i + 1) % 3 === 2 ? 1 : 0;
@@ -131,7 +151,7 @@ function articleReadMoreClickListener(key, heading, content, sources) {
       screen.style.overflowY = "hidden";
       dialog.style.display = "block";
       dialog_heading.innerHTML = heading;
-      dialog_title.innerHTML = formatTitle(key);
+      dialog_title.innerHTML = title;
       dialog_content_p.innerHTML = content;
       dialog_sources.innerHTML = "";
       for (let i = 0; i < sourcesEl.children.length; i++) {
@@ -144,30 +164,4 @@ function articleReadMoreClickListener(key, heading, content, sources) {
       }
     });
   }
-}
-
-// Util
-function formatTitle(key) {
-  var title = "";
-  var i = 0;
-  var character = "";
-  while (i <= key.length) {
-    let character = key.charAt(i);
-    if (i === 0) {
-      character = character.toUpperCase();
-      title += character;
-    } else {
-      if (isNaN(character * 1)) {
-        if (character == character.toUpperCase()) {
-          title += " " + character;
-        } else {
-          title += character;
-        }
-      } else {
-        title += character;
-      }
-    }
-    i++;
-  }
-  return title;
 }
