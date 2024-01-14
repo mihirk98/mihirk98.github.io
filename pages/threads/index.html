@@ -1,0 +1,65 @@
+<div id="threads">
+    <section>
+        <h2>threads</h2>
+        <h3>a digital archive with events of social significance</h3>
+        <p class="gallery-title">WebComic documenting introduction of CAA (2019) in Lok Sabha.</p>
+        <div class="gallery">
+            <a href="/pages/threads/imgs/caa_1.png">
+                <img class="gallery-img" src="/pages/threads/imgs/caa_1.png">
+            </a>
+            <a href="/pages/threads/imgs/caa_2.png">
+                <img class="gallery-img" src="/pages/threads/imgs/caa_2.png">
+            </a>
+            <a href="/pages/threads/imgs/caa_3.png">
+                <img class="gallery-img" src="/pages/threads/imgs/caa_3.png">
+            </a>
+        </div>
+        <p class="gallery-title"><i>Exhibition at Harkat Studio, Mumbai</i><br>Interactive webpage engaging with the
+            audiance to create a collaborative understanding of our relationship with manipulation.</p>
+        <div class="gallery">
+            <video class="gallery-img" height="320" controls>
+                <source src="/pages/threads/vids/harkat_1.mp4" type="video/mp4">
+            </video>
+            <video class="gallery-img" height="320" controls>
+                <source src="/pages/threads/vids/harkat_2.mov" type="video/mp4">
+            </video>
+            <video class="gallery-img" height="320" controls>
+                <source src="/pages/threads/vids/harkat_3.mov" type="video/mp4">
+            </video>
+            <video class="gallery-img" height="320" controls>
+                <source src="/pages/threads/vids/harkat_4.mov" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</div>
+
+<style>
+    #threads {
+        overflow-y: auto;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        margin-top: var(--spacing-normal);
+        gap: var(--spacing-normal);
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        margin-top: var(--spacing-normal);
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .gallery-img {
+        max-height: 320px;
+        max-width: calc(100vw - (var(--spacing-normal) * 3));
+        padding-right: var(--spacing-normal);
+    }
+
+    .gallery-title {
+        margin-top: var(--spacing-normal);
+    }
+</style>

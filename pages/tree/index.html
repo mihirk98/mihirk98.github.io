@@ -1,0 +1,37 @@
+<div id="tree">
+    <section id="flowchart" class="children"></section>
+</div>
+<style>
+    #tree {
+        overflow: auto;
+    }
+
+    .children {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--spacing-extra-large);
+    }
+
+    .move {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: var(--spacing-large);
+        border-top: var(--border-normal) solid #BB7E8C;
+    }
+
+    .move>p,
+    .move>h3 {
+        white-space: nowrap;
+    }
+
+    .move>p {
+        font-size: var(--font-size-small);
+    }
+
+    .opening {
+        text-decoration: underline;
+    }
+</style>
