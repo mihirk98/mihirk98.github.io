@@ -1,0 +1,53 @@
+<style>
+    canvas-element {
+        margin: 16px;
+        font-family: 'FreeMono';
+        font-size: 16px;
+    }
+
+    .eon-title {
+        font-weight: 800;
+    }
+
+    .eon-title-row {
+        width: calc(100% - 16px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8px 0;
+        margin: 0 8px;
+    }
+
+    .eon-border-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 4px black solid;
+        border-radius: 4px;
+    }
+</style>
+<canvas-element shape="rectangle">
+    <span class="eon-title-row eon-title"><span></span><span>notifications</span></span>
+    <div class="eon-border-div" style="width: 100%;">
+        <p class="eon-title-row"><span>DND</span><span class="eon-title">system-wide</span></p>
+        <p class="eon-title-row" style="border-top: 2px black dotted;"><span>ignore</span><span
+                class="eon-title">whatsapp</span></p>
+        <div class="eon-border-div" style="width: 100%;">
+            <p class="eon-title-row"><span></span><span class="eon-title"
+                    style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;"><span
+                        style="border-bottom: 2px black dashed;">volume</span><span>notification</span><span>ringer</span></span>
+            </p>
+            <div class="eon-border-div" style="width: 100%;">
+                <p class="eon-title-row"><span>app</span><span class="eon-title">disable</span></p>
+                <div class="eon-border-div" style="width: 100%;">
+                    <p style="width: 65%; padding: 32px;"><u>The platformization of the internet.</u> Perhaps, not
+                        many
+                        would be surprised to uncover that, the model of the internet was built for platforms. A
+                        platform notifies you, a new message, a new email, a new item on sale. But, can we think of
+                        an internet that does not notify but facilitates conversations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</canvas-element>

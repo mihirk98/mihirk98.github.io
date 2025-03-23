@@ -1,0 +1,123 @@
+<style>
+    canvas-element {
+        display: grid !important;
+        grid-template-columns: repeat(9, 10%);
+        grid-template-rows: repeat(9, 10%);
+        grid-template-areas:
+            ". . . . hnd24_top_back . . . ."
+            ". hnd24_right_back_top hnd24_right_back_top hnd24_right_back_top hnd24_back_top hnd24_left_back_top . . ."
+            ". . . hnd24_right_back_middle hnd24_back_middle hnd24_left_back_middle . . ."
+            ". . . hnd24_right_back_bottom hnd24_back_bottom hnd24_left_back_bottom . . ."
+            "hnd24_top_right hnd24_right_top hnd24_right_middle hnd24_right_bottom hnd24_bottom hnd24_left_bottom hnd24_left_middle hnd24_left_top hnd24_top_left"
+            ". . . hnd24_front_right_bottom hnd24_front_bottom . hnd24_front_left_bottom2 . ."
+            ". . . hnd24_front_right_middle hnd24_front_middle hnd24_front_left_middle hnd24_front_left_middle hnd24_front_left_top2 hnd24_front_left_top2"
+            ". . . hnd24_front_right_top hnd24_front_top hnd24_front_left_top hnd24_front_left_top hnd24_front_left_top ."
+            ". . . . hnd24_top_front . . . .";
+        justify-content: center;
+    }
+
+    .hnd24_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hnd24_img_left {
+        transform: rotate(90deg);
+    }
+
+    .hnd24_img_right {
+        transform: rotate(-90deg);
+    }
+
+    .hnd24_img_front {
+        transform: rotate(180deg);
+    }
+
+    .hnd24_front_left {
+        transform: rotate(135deg);
+    }
+
+    .hnd24_front_right {
+        transform: rotate(-135deg);
+    }
+
+    .hnd24_right_back {
+        transform: rotate(-22.5deg);
+    }
+
+    @keyframes slide {
+        0% {
+            transform: rotate(-22.5deg) translate(110px, 89px);
+        }
+
+        100% {
+            transform: rotate(-22.5deg) translate(10px, 89px);
+        }
+    }
+</style>
+<canvas-element shape="square">
+    <img class="hnd24_img" style="grid-area: hnd24_back_top;" src="home+space/images/hiltrup_novtodec24/back_top.jpg" />
+    <img class="hnd24_img" style="grid-area: hnd24_back_middle;"
+        src="home+space/images/hiltrup_novtodec24/back_middle.jpg" />
+    <img class="hnd24_img hnd24_img_front" style="grid-area: hnd24_front_middle;"
+        src="home+space/images/hiltrup_novtodec24/front_middle.jpg" />
+    <img class="hnd24_img hnd24_img_front" style="grid-area: hnd24_front_top;"
+        src="home+space/images/hiltrup_novtodec24/front_top.jpg" />
+    <img class="hnd24_img hnd24_img_left" style="width: 200%; transform-origin: top; grid-area: hnd24_left_middle;"
+        src="home+space/images/hiltrup_novtodec24/left_middle.jpg" />
+    <img class="hnd24_img hnd24_img_right" style="width: 200%; grid-area: hnd24_right_middle;"
+        src="home+space/images/hiltrup_novtodec24/right_middle.jpg" />
+    <img class="hnd24_img hnd24_img_front" style="height: 200%; width: 200%; grid-area: hnd24_front_bottom;"
+        src="home+space/images/hiltrup_novtodec24/front_bottom.jpg" />
+    <img class="hnd24_img hnd24_img_left" style="grid-area: hnd24_left_bottom;"
+        src="home+space/images/hiltrup_novtodec24/left_bottom.jpg" />
+    <img class="hnd24_img" style="grid-area: hnd24_back_bottom;"
+        src="home+space/images/hiltrup_novtodec24/back_bottom.jpg" />
+    <img class="hnd24_img hnd24_img_right" style="grid-area: hnd24_right_bottom;"
+        src="home+space/images/hiltrup_novtodec24/right_bottom.jpg" />
+    <img class="hnd24_img hnd24_img_left" style="grid-area: hnd24_left_top;"
+        src="home+space/images/hiltrup_novtodec24/left_top.jpg" />
+    <img class="hnd24_img hnd24_img_right" style="width: 200%; grid-area: hnd24_right_top;"
+        src="home+space/images/hiltrup_novtodec24/right_top.jpg" />
+    <img class="hnd24_img hnd24_front_left" style="grid-area: hnd24_front_left_middle;"
+        src="home+space/images/hiltrup_novtodec24/front_left_middle.jpg" />
+    <img class="hnd24_img hnd24_left_back" style="grid-area: hnd24_left_back_middle;"
+        src="home+space/images/hiltrup_novtodec24/left_back_middle.jpg" />
+    <img class="hnd24_img hnd24_right_back"
+        style="width: 200%; transform: rotate(-22.5deg) translate(-53px, 16px); z-index: -1; grid-area: hnd24_right_back_middle;"
+        src="home+space/images/hiltrup_novtodec24/right_back_middle.jpg" />
+    <img class="hnd24_img hnd24_front_right"
+        style="width: 200%; height: 200%; grid-area: hnd24_front_right_middle; transform: rotate(-135deg) translate(80px, -95px); z-index: 0;"
+        src="home+space/images/hiltrup_novtodec24/front_right_middle.jpg" />
+    <img class="hnd24_img hnd24_front_left"
+        style="grid-area: hnd24_front_left_bottom2; transform: rotate(147deg) translate(9px, 12px);"
+        src="home+space/images/hiltrup_novtodec24/front_left_bottom.jpg" />
+    <img class="hnd24_img hnd24_left_back" style="grid-area: hnd24_left_back_bottom;"
+        src="home+space/images/hiltrup_novtodec24/left_back_bottom.jpg" />
+    <img class="hnd24_img hnd24_right_back" style="grid-area: hnd24_right_back_bottom;"
+        src="home+space/images/hiltrup_novtodec24/right_back_bottom.jpg" />
+    <img class="hnd24_img hnd24_front_right"
+        style="grid-area: hnd24_front_right_bottom; transform: rotate(-160deg) translate(-21px, 5px);"
+        src="home+space/images/hiltrup_novtodec24/front_right_bottom.jpg" />
+    <img class="hnd24_img hnd24_front_left" style="grid-area: hnd24_front_left_top;"
+        src="home+space/images/hiltrup_novtodec24/front_left_top.jpg" />
+    <img class="hnd24_img hnd24_front_left" style="grid-area: hnd24_front_left_top2;"
+        src="home+space/images/hiltrup_novtodec24/front_left_top.jpg" />
+    <img class="hnd24_img hnd24_left_back" style="grid-area: hnd24_left_back_top;"
+        src="home+space/images/hiltrup_novtodec24/left_back_top.jpg" />
+    <img class="hnd24_img hnd24_right_back"
+        style="z-index: -1; animation: slide 2s alternate infinite; transform: rotate(-22.5deg) translate(110px, 89px); grid-area: hnd24_right_back_top;"
+        src="home+space/images/hiltrup_novtodec24/right_back_top.jpg" />
+    <img class="hnd24_img hnd24_front_right" style="grid-area: hnd24_front_right_top;"
+        src="home+space/images/hiltrup_novtodec24/front_right_top.jpg" />
+    <img class="hnd24_img hnd24_img_front" style="grid-area: hnd24_top_front;"
+        src="home+space/images/hiltrup_novtodec24/top_front.jpg" />
+    <img class="hnd24_img hnd24_img_left" style="grid-area: hnd24_top_left;"
+        src="home+space/images/hiltrup_novtodec24/top_left.jpg" />
+    <img class="hnd24_img" style="grid-area: hnd24_top_back;" src="home+space/images/hiltrup_novtodec24/top_back.jpg" />
+    <img class="hnd24_img hnd24_img_right" style="width: 200%; grid-area: hnd24_top_right;"
+        src="home+space/images/hiltrup_novtodec24/top_right.jpg" />
+    <img class="hnd24_img hnd24_img_front" style="grid-area: hnd24_bottom;"
+        src="home+space/images/hiltrup_novtodec24/bottom.jpg" />
+</canvas-element>
