@@ -45,7 +45,7 @@ class CanvasEl extends HTMLElement {
             }
         }
 
-        canvas-element img {
+        canvas-element img, video {
           object-fit: contain;
         }
     `;
