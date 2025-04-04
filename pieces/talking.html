@@ -1,0 +1,111 @@
+<style>
+    #talking {
+        font-size: 16px;
+    }
+
+    #talking>section {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding: 16px;
+    }
+
+    @media (orientation: landscape) {
+        #talking {
+            flex-direction: row;
+        }
+
+        #talking>section {
+            width: 50%;
+            height: calc(100% - 64px);
+        }
+    }
+
+    #talking-bot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #000;
+        border-radius: 16px;
+        box-shadow:
+            1px -1px 2px 0 #000,
+            -12px 12px 16px #e0e0e0;
+    }
+
+    .talking-round-box {
+        width: 80%;
+        margin-top: 16px;
+        padding: 8px;
+        border: 1px solid #000;
+        border-radius: 16px;
+    }
+
+    #talking-typing {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        width: 50px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 16px;
+        box-shadow: 4px 2px 2px 4px #e0e0e0;
+    }
+
+    .loader {
+        width: 80%;
+        aspect-ratio: 4;
+        background: radial-gradient(circle closest-side, #000 90%, #0000) 0/calc(100%/3) 60% space;
+        clip-path: inset(0 100% 0 0);
+        animation: l1 1s steps(4) infinite;
+    }
+
+    @keyframes l1 {
+        to {
+            clip-path: inset(0 -34% 0 0)
+        }
+    }
+</style>
+<canvas-element id="talking" shape="square">
+    <section id="talking-bot">
+        <h2>talking to my sister</h2>
+        <div style="padding-bottom: 66px; overflow-y: auto;">
+            <p class="talking-round-box">I can now proudly say that, “I am Hindu”. They allowed us to do this. Before,
+                we could not say this.</p>
+            <p class="talking-round-box" style="justify-self: flex-end;">Who stopped you from saying this?</p>
+            <p class="talking-round-box">They gave them preferential treatment. But, it is the our time now. It is our
+                government.</p>
+        </div>
+        <div id="talking-typing">
+            <div class="loader"></div>
+        </div>
+    </section>
+    <section style="display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+        <p style="font-size: 1.5rem;">With the advent of artificial stupidity, we can now see that we're basically
+            chatbots. Simple narratives are the are the telltale signs of two things- Fascism, a by-product of
+            globalisation and capitalism and, snotty kids.
+        </p>
+        <div style="height: 25%;"></div>
+    </section>
+    <!-- <section id="talking-bot">
+        <h2>talking to my sister</h2>
+        <div style="padding-bottom: 66px; overflow-y: auto;">
+            <p class="talking-round-box">I can now proudly say that, “I am Hindu”. They allowed us to do this. Before,
+                we could not say this.</p>
+            <p class="talking-round-box" style="justify-self: flex-end;">Who stopped you from saying this?</p>
+            <p class="talking-round-box">They gave them preferential treatment. But, it is the our time now. It is our
+                government.</p>
+        </div>
+        <div id="talking-typing">
+            <div class="loader"></div>
+        </div>
+    </section>
+    <section style="display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+        <p style="font-size: 1.5rem;">With the advent of high resource algorithms, the machinization of the ontology of
+            the self is complete. Simple narratives are the are the telltale signs of system-induced struggle.
+        </p>
+        <div style="height: 25%;"></div>
+    </section> -->
+</canvas-element>
