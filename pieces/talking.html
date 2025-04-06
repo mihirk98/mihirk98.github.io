@@ -1,20 +1,15 @@
 <style>
     #talking {
         font-size: 16px;
-        height: calc(100% - 10vw) !important;
-    }
-
-    #talking>section {
-        position: relative;
-        width: 100%;
-        padding: 16px;
     }
 
     #talking-bot {
+        position: relative;
         display: flex;
         flex: 1;
-        width: calc(100% - 32px) !important;
+        max-width: 320px;
         margin: 16px;
+        padding: 16px;
         flex-direction: column;
         justify-content: space-between;
         border: 1px solid #000;
@@ -22,30 +17,6 @@
         box-shadow:
             1px -1px 2px 0 #000,
             -12px 12px 16px #e0e0e0;
-    }
-
-    #talking-com {
-        display: none;
-    }
-
-    @media (orientation: landscape) {
-        #talking {
-            flex-direction: row;
-        }
-
-        #talking>section {
-            width: 50%;
-            height: calc(100% - 64px);
-        }
-
-        #talking-bot {
-            width: 50% !important;
-            margin: 0;
-        }
-
-        #talking-com {
-            display: flex;
-        }
     }
 
     .talking-round-box {
@@ -84,7 +55,7 @@
         }
     }
 </style>
-<canvas-element id="talking" shape="square">
+<canvas-element id="talking" shape="rectangle">
     <section id="talking-bot">
         <h2>talking to my sister</h2>
         <div style="padding-bottom: 66px; overflow-y: auto;">
@@ -97,13 +68,5 @@
         <div id="talking-typing">
             <div class="loader"></div>
         </div>
-    </section>
-    <section id="talking-com"
-        style="flex-direction: column; justify-content: space-around; align-items: center;">
-        <p style="font-size: 1.5rem;">With the advent of artificial stupidity, we can now see that we're basically
-            chatbots. Simple narratives are the are the telltale signs of two things- Fascism, a by-product of
-            globalisation and capitalism and, snotty kids.
-        </p>
-        <div style="height: 25%;"></div>
     </section>
 </canvas-element>
