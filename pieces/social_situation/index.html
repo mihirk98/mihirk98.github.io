@@ -1,0 +1,61 @@
+<style>
+    #social_situation {
+        display: grid;
+        grid-template-columns: repeat(6, 15%);
+        grid-template-rows: repeat(6, 15%);
+        grid-template-areas:
+            "top-left top-left top-left top-vertical top-right top-right"
+            "side side hole-home top-vertical dustbin dustbin"
+            "side side middle-side middle-side dustbin dustbin"
+            "other-diag bins shrub shrub top top"
+            "bench bench middle-diag middle-diag static static"
+            "bench bench middle-diag middle-diag other-side other-side";
+        justify-content: center;
+    }
+
+    #social_situation>img,
+    #social_situation>video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+<canvas-element shape="square" id="social_situation">
+    <img style="grid-area: bench;" src="/pieces/social_situation/media/bench.png" />
+    <img style="grid-area: bins;" src="/pieces/social_situation/media/bins.JPG" />
+    <img style="grid-area: dustbin;" src="/pieces/social_situation/media/dustbin.JPG" />
+    <video style="grid-area: hole-home;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/hole_home.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: middle-diag;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/middle_diagonal.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: middle-side;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/middle_side.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: other-diag;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/other_diagonal.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: other-side;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/other_side.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: top-left;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/top_left.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: top-vertical;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/top_vertical.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: top-right;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/top_right.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: top;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/top.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: shrub;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/shrub.mov" type="video/mp4" />
+    </video>
+    <video style="grid-area: side;" autoplay muted loop>
+        <source src="/pieces/social_situation/media/side.mov" type="video/mp4" />
+    </video>
+    <img style="grid-area: static;" src="/pieces/social_situation/media/static.JPG" />
+</canvas-element>
