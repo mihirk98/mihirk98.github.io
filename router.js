@@ -15,6 +15,14 @@ async function render() {
   loc = window.location.search.replace("?loc=", "");
   const response = await fetch(loc);
   mainEl.innerHTML = await response.text();
+  checkScriptElement();
+}
+
+function checkScriptElement() {
+  let newScriptEl = document.createElement("script");
+  newScriptEl.setAttribute("type", "text/javascript");
+  newScriptEl.setAttribute("src", loc.replace("index.html", "script.js"));
+  mainEl.appendChild(newScriptEl);
 }
 
 window.pushstate = render;

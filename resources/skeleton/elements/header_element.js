@@ -57,6 +57,7 @@ class HeaderEl extends HTMLElement {
             <lh>home+space</lh>
             <li onclick="route('home+space/hiltrup_novtodec24.html')">hiltrup_novtodec24</li>
             <lh>pieces</lh>
+            <li><a href="pieces/artificial_self/index.html">artificial self</a></li>
             <li onclick="route('pieces/social_situation/index.html')">social situation</li>
             <li onclick="route('pieces/talking.html')">talking</li>
             <li onclick="route('pieces/ethnography_of_notifications.html')">ethnography of notifications</li>
