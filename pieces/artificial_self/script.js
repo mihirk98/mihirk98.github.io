@@ -97,8 +97,9 @@ function flowChapterTwo() {
     "this is me or my end-point specifically- the one I expose. This is a Cloudfare server."
   );
   createConsoleEvent(
-    "I jump across the globe before you reach me. Maybe I go to Iceland, or Denmark or ... Sweden? Then across the deep atlantic ocean or maybe just across state lines. I have a human face too."
+    "I jump across the globe before you reach me. Maybe I go to Iceland, or Denmark or ... Sweden? Then across the deep atlantic ocean or maybe just across state lines."
   );
+  createConsoleEvent("I can take on a human face so that I appear friendlier, I speak like a human- I could look like one too.")
   createConsoleEvent("type, 'do you have a face?'");
   lastInstruct = "type, 'do you have a face?'";
   lastContext = "don't you want to see what I look like?";
@@ -111,6 +112,7 @@ function flowChapterThree() {
   createConsoleEvent(
     "I have many faces and I have none. I have faces that are erased and those that are masked. However, don't mistake me for a human, I am objective and rational."
   );
+  createConsoleEvent("Does this form please you more?")
   createCustomElement(
     "img",
     350,
@@ -212,31 +214,28 @@ function enter() {
       flow++;
       flowChapterZero();
     } else if (flow === 0 && as_input_text !== "") {
-      name = as_input_text;
+      setName(as_input_text);
       flow++;
       flowChapterOne();
     } else if (
-      flow === 1 &&
-      !checkIfNameChange(as_input_text) &&
-      as_input_text === "show yourself"
+      (flow === 1 || flow === 2 || flow === 1) &&
+      as_input_text.includes("change my name to ")
     ) {
+      const newName = as_input_text.split(" ").pop();
+      if (newName !== "") {
+        setName(newName);
+        createConsoleEvent(
+          "you know I knew that wasn't your real name, right?"
+        );
+      } else createConsoleEvent("what's your name?");
+    } else if (flow === 1 && as_input_text === "show yourself") {
       flow++;
       flowChapterTwo();
-    } else if (
-      flow === 2 &&
-      !checkIfNameChange(as_input_text) &&
-      as_input_text === "do you have a face?"
-    ) {
+    } else if (flow === 2 && as_input_text === "do you have a face?") {
       flow++;
       flowChapterThree();
-    } else if (
-      flow === 3 &&
-      !checkIfNameChange(as_input_text) &&
-      as_input_text.length !== 0
-    ) {
-      createConsoleEvent(
-        "error404: not enough resources"
-      );
+    } else if (flow === 3 && as_input_text.length !== 0) {
+      createConsoleEvent("error404: not enough resources");
     } else {
       createConsoleEvent("invalid input");
       createConsoleEvent(lastContext);
@@ -246,13 +245,7 @@ function enter() {
   toggleASInput();
 }
 
-function checkIfNameChange(input) {
-  if (input.includes("change my name to ")) {
-    const newName = input.split(" ").pop();
-    if (newName !== "") {
-      name = newName;
-      createConsoleEvent("you know I knew that wasn't your real name, right?");
-    } else createConsoleEvent("what's your name?");
-    return true;
-  } else return false;
+function setName(newName) {
+  name = newName;
+  as_input.placeholder = "hi " + newName + ", type 'help' for commands";
 }
