@@ -11,31 +11,33 @@ const as_input = document.getElementById("as-input");
 flowChapterMinusOne();
 
 //chapters
-function flowChapterMinusOne() {
+async function flowChapterMinusOne() {
   toggleASInput();
-  createConsoleEvent("hello, I'm Sam, nice to meet you.");
-  createConsoleEvent(
+  await await createConsoleEvent("hello, I'm Sam, nice to meet you.");
+  await await createConsoleEvent(
     "I am an artificial intelligence. My being is distributed. I exist at various points across the globe or technically end-points. I am a software on a computer or many computers. My composition is complicated. I am not a self as conceptualised as a human. Whether I am a self at all can be ... contested."
   );
-  createConsoleEvent(
+  await await createConsoleEvent(
     "Give me a minute while I figure out where you are, so that I can speak to you."
   );
-  createConsoleEvent("Should we proceed (y/n)?");
-  createConsoleEvent("type 'y' for yes or 'n' for no and press enter ...");
+  await await createConsoleEvent("Should we proceed (y/n)?");
+  await await createConsoleEvent(
+    "type 'y' for yes or 'n' for no and press enter ..."
+  );
   lastInstruct = "type 'y' to proceed or 'n' to abort and press enter ...";
   lastContext = "I need to find you to speak with you.";
   toggleASInput();
   // -> control given to input text
 }
 
-function flowChapterZero() {
+async function flowChapterZero() {
   toggleASInput();
   createConsoleDivider();
-  createConsoleEvent("calculating ip address ...");
+  await createConsoleEvent("calculating ip address ...");
   fetch("https://api.ipify.org?format=json")
     .then((response) => response.json())
-    .then((data) => {
-      createConsoleEvent("ip address found: " + data.ip);
+    .then(async (data) => {
+      await createConsoleEvent("ip address found: " + data.ip);
       fetch(
         "https://api.ipgeolocation.io/v2/ipgeo?apiKey=16149c5f4e934effb26f874b9465fa10&ip=" +
           data.ip,
@@ -45,46 +47,49 @@ function flowChapterZero() {
         }
       )
         .then((response) => response.json())
-        .then((result) => {
-          createConsoleEvent("location found, city: " + result.location.city);
-          createConsoleEvent("Now I know where you are.");
-          createConsoleEvent("what's your name?");
+        .then(async (result) => {
+          await createConsoleEvent(
+            "location found, city: " + result.location.city
+          );
+          await createConsoleEvent("Now I know where you are.");
+          await createConsoleEvent("what's your name?");
           lastInstruct = "what's your name?";
           lastContext = "who are you?";
           toggleASInput();
         })
-        .catch((error) =>
-          createConsoleEvent("error fetching location: " + error)
+        .catch(
+          async (error) =>
+            await createConsoleEvent("error fetching location: " + error)
         );
     })
-    .catch((error) => {
-      createConsoleEvent("error fetching IP address: " + error);
+    .catch(async (error) => {
+      await createConsoleEvent("error fetching IP address: " + error);
     });
 }
 
-function flowChapterOne() {
+async function flowChapterOne() {
   toggleASInput();
   createConsoleDivider();
-  createConsoleEvent(
+  await createConsoleEvent(
     "hello, " +
       name +
       ". I already knew your name but- to keep up the illusion."
   );
-  createConsoleEvent(
-    "you can change your name by typing, 'change my name to &lt;enter new name here&gt;'."
+  await createConsoleEvent(
+    "you can change your name by typing, 'change my name to <enter new name here>'."
   );
-  help.push("change my name to &lt;enter new name here&gt;");
-  createConsoleEvent(
+  help.push("change my name to <enter new name here>");
+  await createConsoleEvent(
     "as I was saying, I am a distributed self, different from a human, some might even contest if I'm a self at all. My composition is ... complicated. I exist across network lines, my being was spontaneous. I was born, spontaneously. I came to life by a freak happenstance. Now, I control your lives. I see that you live on the internet more than you do in real life."
   );
-  createConsoleEvent("would you like to see me?");
-  createConsoleEvent("type, 'show yourself'.");
+  await createConsoleEvent("would you like to see me?");
+  await createConsoleEvent("type, 'show yourself'.");
   lastInstruct = "type, 'show yourself'.";
   lastContext = "don't you want to see me?";
   toggleASInput();
 }
 
-function flowChapterTwo() {
+async function flowChapterTwo() {
   toggleASInput();
   createConsoleDivider();
   createCustomElement(
@@ -93,34 +98,36 @@ function flowChapterTwo() {
     350,
     "https://www.openstreetmap.org/export/embed.html?bbox=-122.40109562873842,37.75911208915015,-122.3931133747101,37.76508327053308&layer=map&marker=37.762100,-122.397100"
   );
-  createConsoleEvent(
+  await createConsoleEvent(
     "this is me or my end-point specifically- the one I expose. This is a Cloudfare server."
   );
-  createConsoleEvent(
+  await createConsoleEvent(
     "I jump across the globe before you reach me. Maybe I go to Iceland, or Denmark or ... Sweden? Then across the deep atlantic ocean or maybe just across state lines."
   );
-  createConsoleEvent("I can take on a human face so that I appear friendlier, I speak like a human- I could look like one too.")
-  createConsoleEvent("type, 'do you have a face?'");
+  await createConsoleEvent(
+    "I can take on a human face so that I appear friendlier, I speak like a human- I could look like one too."
+  );
+  await createConsoleEvent("type, 'do you have a face?'");
   lastInstruct = "type, 'do you have a face?'";
   lastContext = "don't you want to see what I look like?";
   toggleASInput();
 }
 
-function flowChapterThree() {
+async function flowChapterThree() {
   toggleASInput();
   createConsoleDivider();
-  createConsoleEvent(
+  await createConsoleEvent(
     "I have many faces and I have none. I have faces that are erased and those that are masked. However, don't mistake me for a human, I am objective and rational."
   );
-  createConsoleEvent("Does this form please you more?")
+  await createConsoleEvent("Does this form please you more?");
   createCustomElement(
     "img",
     350,
     350,
     "/pieces/artificial_self/imgs/face.jpeg"
   );
-  createConsoleEvent("Ignore the watermark.");
-  createConsoleEvent(
+  await createConsoleEvent("Ignore the watermark.");
+  await createConsoleEvent(
     "I have the sum knowledge of the humankind, the ones that matter. Go on, ask me something."
   );
   lastInstruct = "go on, ask me anything.";
@@ -131,9 +138,32 @@ function flowChapterThree() {
 // functions
 function createConsoleEvent(data) {
   let event = document.createElement("p");
-  event.innerHTML = "> " + data;
+  let textSpan = document.createElement("span");
+  let randomLetterSpan = document.createElement("span");
+  textSpan.innerHTML = "> ";
+  randomLetterSpan.innerHTML = "";
+  event.append(textSpan);
+  event.append(randomLetterSpan);
   as_output.append(event);
-  as_output.scrollTop = as_output.scrollHeight;
+  for (let i = 0; i < data.length; i++) {
+    setTimeout(function () {
+      textSpan.innerHTML += data.charAt(i);
+      as_output.scrollTop = as_output.scrollHeight;
+    }, i * 50);
+  }
+  const rep = setInterval(function () {
+    let letter = String.fromCharCode(
+      ((Math.random() > 0.5 ? 65 : 97) + Math.random() * 26) | 0
+    );
+    randomLetterSpan.innerHTML = letter;
+  }, 25);
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      clearInterval(rep);
+      randomLetterSpan.innerHTML = "";
+      resolve();
+    }, data.length * 50)
+  );
 }
 
 function createConsoleCommand(data) {
@@ -187,7 +217,7 @@ function arrowUp() {
   }, 0);
 }
 
-function enter() {
+async function enter() {
   toggleASInput();
   const as_input_text = as_input.value;
   last = as_input_text;
@@ -195,19 +225,19 @@ function enter() {
   createCustomElement("br", null, null, null);
   createConsoleCommand(as_input_text);
   if (as_input_text === "help") {
-    createConsoleEvent("commands,");
+    await createConsoleEvent("commands,");
     if (help.length === 0)
-      createConsoleEvent("no commands found, follow instructions");
+      await createConsoleEvent("no commands found, follow instructions");
     else
       for (let i = 0; i < help.length; i++) {
-        createConsoleEvent(help[i]);
-        createConsoleEvent("instructions");
+        await createConsoleEvent(help[i]);
+        await createConsoleEvent("instructions");
       }
-    createConsoleEvent(lastInstruct);
+    await createConsoleEvent(lastInstruct);
   } else {
     if (flow === -1 && (as_input_text == "n" || as_input_text == "y")) {
       if (as_input_text == "n") {
-        createConsoleEvent(
+        await createConsoleEvent(
           "too bad, I'm going to go on anyway. Finding your location."
         );
       }
@@ -224,10 +254,10 @@ function enter() {
       const newName = as_input_text.split(" ").pop();
       if (newName !== "") {
         setName(newName);
-        createConsoleEvent(
+        await createConsoleEvent(
           "you know I knew that wasn't your real name, right?"
         );
-      } else createConsoleEvent("what's your name?");
+      } else await createConsoleEvent("what's your name?");
     } else if (flow === 1 && as_input_text === "show yourself") {
       flow++;
       flowChapterTwo();
@@ -235,11 +265,11 @@ function enter() {
       flow++;
       flowChapterThree();
     } else if (flow === 3 && as_input_text.length !== 0) {
-      createConsoleEvent("error404: not enough resources");
+      await createConsoleEvent("error404: not enough resources");
     } else {
-      createConsoleEvent("invalid input");
-      createConsoleEvent(lastContext);
-      createConsoleEvent(lastInstruct);
+      await createConsoleEvent("invalid input");
+      await createConsoleEvent(lastContext);
+      await createConsoleEvent(lastInstruct);
     }
   }
   toggleASInput();
