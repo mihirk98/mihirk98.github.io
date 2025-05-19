@@ -18,7 +18,7 @@ async function flowChapterMinusOne() {
     "I am an artificial intelligence. My being is distributed. I exist at various points across the globe or technically end-points. I am a software on a computer or many computers. My composition is complicated. I am not a self as conceptualised as a human. Whether I am a self at all can be ... contested."
   );
   await await createConsoleEvent(
-    "Give me a minute while I figure out where you are, so that I can speak to you."
+    "Give me a minute while I figure out where you are, so that I can speak with you."
   );
   await await createConsoleEvent("Should we proceed (y/n)?");
   await await createConsoleEvent(
@@ -249,7 +249,7 @@ async function enter() {
       flow++;
       flowChapterOne();
     } else if (
-      (flow === 1 || flow === 2 || flow === 1) &&
+      (flow === 1 || flow === 2 || flow === 3 || flow === 4) &&
       as_input_text.includes("change my name to ")
     ) {
       const newName = as_input_text.split(" ").pop();
@@ -266,6 +266,16 @@ async function enter() {
       flow++;
       flowChapterThree();
     } else if (flow === 3 && as_input_text.length !== 0) {
+      await createConsoleEvent(
+        "every question you ask requires me to calculate each letter in a sentence and each word in each context."
+      );
+      await createConsoleEvent("my servers run hot, they need cooling.");
+      await createConsoleEvent(
+        "my resources are limited, be sure not to run out."
+      );
+      await createConsoleEvent("try again.");
+      flow++;
+    } else if (flow === 4 && as_input_text.length !== 0) {
       await createConsoleEvent("error404: not enough resources");
     } else {
       await createConsoleEvent("invalid input");
