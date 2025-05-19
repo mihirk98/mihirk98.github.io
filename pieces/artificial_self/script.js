@@ -196,6 +196,7 @@ function createCustomElement(el, width, height, src) {
 function toggleASInput() {
   if (as_input.disabled === true) {
     as_input.disabled = false;
+    as_output.scrollTop = as_output.scrollHeight;
     as_input.focus();
   } else as_input.disabled = true;
   as_output.scrollTop = as_output.scrollHeight;
